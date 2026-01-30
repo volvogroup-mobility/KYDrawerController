@@ -24,8 +24,7 @@ let package = Package(
             name: "KYDrawerController",
             dependencies: [],
             path: "KYDrawerController",
-            sources: ["Classes"],
-            publicHeadersPath: ".",
+            sources: ["Classes"]
         )
     ],
     swiftLanguageVersions: [.v5]
