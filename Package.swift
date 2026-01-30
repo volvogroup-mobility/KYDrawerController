@@ -24,10 +24,6 @@ let package = Package(
             name: "KYDrawerController",
             dependencies: [],
             path: "KYDrawerController/Classes"),
-        .testTarget(
-            name: "KYDrawerControllerTests",
-            dependencies: ["KYDrawerController"],
-            path: "KYDrawerControllerTests"),
     ],
     swiftLanguageVersions: [.v5]
 )
