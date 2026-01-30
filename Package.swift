@@ -1,4 +1,4 @@
-// swift-tools-version:5.9
+// swift-tools-version:5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "KYDrawerController",
     platforms: [
-        .iOS(.v9)  // Minimum iOS version the library supports
+        .iOS(.v14)  // Minimum iOS version the library supports
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -23,7 +23,10 @@ let package = Package(
         .target(
             name: "KYDrawerController",
             dependencies: [],
-            path: "KYDrawerController/Classes"),
+            path: "KYDrawerController",
+            sources: ["Classes"],
+            publicHeadersPath: ".",
+        )
     ],
     swiftLanguageVersions: [.v5]
 )
